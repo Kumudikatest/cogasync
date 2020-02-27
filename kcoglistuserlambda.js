@@ -3,9 +3,12 @@ const cognito_idp = new AWS.CognitoIdentityServiceProvider();
 
 exports.handler = async (event) => {
     try {
-        let data = await cognito_idp.listUsers({
+        let data = await cognito_idp.adminCreateUser({
             UserPoolId: "us-east-1_HdYJb7Znp",
-            Limit: 10
+            Username: "Kumu",
+            DesiredDeliveryMediums: ['SMS'],
+            ForceAliasCreation: false,
+            TemporaryPassword: "Test@123"
         }).promise();
         console.log(data);
 
