@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "kcoglistuserlambda.js",
         "cursor": {
-          "lineNumber": 9,
-          "column": 22
+          "lineNumber": 11,
+          "column": 27
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -23,12 +23,8 @@
         },
         "triggers": [
           {
-            "resourceName": "s3cloud9Ktest",
-            "config": {
-              "type": "s3:ObjectCreated:Put",
-              "keyPrefix": "",
-              "keySuffix": ""
-            }
+            "resourceName": "apigusEast1TestAPIMyLambdapost",
+            "config": {}
           }
         ],
         "testCases": {
@@ -307,6 +303,49 @@
             "name": "cloud9-ktest"
           }
         }
+      },
+      "apigusEast1TestAPIMyLambdapost": {
+        "name": "apigusEast1TestAPIMyLambdapost",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k",
+            "/newchange/test": "k6pdhn",
+            "/newchange": "q1ox7l",
+            "/testWithSlash": "q4m4g1",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/MyLambda",
+          "resourceName": "MyLambda",
+          "resourceId": "98nqbj",
+          "restMethod": "POST",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "test",
+          "stageDeploymentId": "qtlfty",
+          "mode": 1
+        }
+      },
+      "kinesisK": {
+        "name": "kinesisK",
+        "type": "Kinesis",
+        "config": {
+          "mode": 0,
+          "StreamName": "K",
+          "shards": 1,
+          "region": "us-east-1",
+          "operation": "putRecord"
+        }
       }
     },
     "customTemplate": {
@@ -343,7 +382,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1582784201750
+    "lastSave": 1582784780041
   },
   "VCS_STATE": {
     "provider": "GitHub",

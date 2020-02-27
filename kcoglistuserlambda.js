@@ -1,11 +1,12 @@
 let AWS = require('aws-sdk');
-const cognito_idp = new AWS.CognitoIdentityServiceProvider();
+const kinesis = new AWS.Kinesis();
 
 exports.handler = async (event) => {
     try {
-        let data = await cognito_idp.adminDeleteUser({
-            UserPoolId: "us-east-1_HdYJb7Znp",
-            Username: "Kumu"
+        let data = await kinesis.putRecord({
+            StreamName: "K",
+            Data: "1",
+            PartitionKey: "1"
         }).promise();
         console.log(data);
 
