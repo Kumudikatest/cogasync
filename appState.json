@@ -11,7 +11,7 @@
         "isRemovable": true,
         "filePath": "kcoglistuserlambda.js",
         "cursor": {
-          "lineNumber": 11,
+          "lineNumber": 10,
           "column": 27
         },
         "config": {
@@ -323,7 +323,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1582782921030
+    "lastSave": 1582783200870
   },
   "VCS_STATE": {
     "provider": "GitHub",
