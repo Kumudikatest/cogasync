@@ -4,12 +4,12 @@
       "f602ccc4-e459-4fdf-a186-76a487815a5d": {
         "id": "f602ccc4-e459-4fdf-a186-76a487815a5d",
         "parent": null,
-        "name": "lambda.js",
+        "name": "kcoglistuserlambda.js",
         "type": "JS_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "lambda.js",
+        "filePath": "kcoglistuserlambda.js",
         "cursor": {
           "lineNumber": 10,
           "column": 27
@@ -323,7 +323,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1582781363147
+    "lastSave": 1582782220546
   },
   "VCS_STATE": {
     "provider": "GitHub",
