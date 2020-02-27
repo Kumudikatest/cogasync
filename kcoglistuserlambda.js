@@ -2,13 +2,11 @@ let AWS = require('aws-sdk');
 const cognito_idp = new AWS.CognitoIdentityServiceProvider();
 
 exports.handler = async (event) => {
+
     try {
-        let data = await cognito_idp.adminCreateUser({
+        let data = await cognito_idp.adminGetUser({
             UserPoolId: "us-east-1_HdYJb7Znp",
-            Username: "Kumu",
-            DesiredDeliveryMediums: ['SMS'],
-            ForceAliasCreation: false,
-            TemporaryPassword: "Test@123"
+            Username: "Kumu"
         }).promise();
         console.log(data);
 
